@@ -8,7 +8,7 @@ import {
   DocumentData,
 } from 'firebase/firestore'
 import { Homepage, Post, PageNotFound } from './components'
-import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 function App() {
   const [arr, setArr] = useState<DocumentData[]>([])

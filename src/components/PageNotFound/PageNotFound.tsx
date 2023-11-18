@@ -1,5 +1,5 @@
-import { DocumentData } from 'firebase/firestore'
 import React from 'react'
+import { DocumentData } from 'firebase/firestore'
 import './PageNotFound.css'
 
 export default function PageNotFound({ theme }: DocumentData) {

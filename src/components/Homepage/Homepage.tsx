@@ -1,15 +1,11 @@
+import React, { Key } from 'react'
 import { DocumentData } from 'firebase/firestore'
-import React, { Key, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import Card from './Card/Card'
 import './Homepage.css'
-import ThemeProvider, {
-  ThemeConsumer,
-  ThemeContextValue,
-} from 'react-bootstrap/esm/ThemeProvider'
 
 export default function Homepage({ arr, theme }: DocumentData) {
-  //* Animations
+  // Animations
   document.addEventListener('mousemove', (e) => {
     Array.from(
       document.getElementsByClassName('circle') as HTMLCollectionOf<HTMLElement>
@@ -40,8 +36,6 @@ export default function Homepage({ arr, theme }: DocumentData) {
   }
 
   const featuredPostStringDate = getPostDateToString(arr[0].date.toDate())
-
-  // const theme = useContext(ThemeContext)
 
   return (
     <main className={theme}>
